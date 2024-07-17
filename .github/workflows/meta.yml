@@ -15,6 +15,7 @@ jobs:
 
         steps:
             - uses: actions/checkout@v4
+
             - uses: pnpm/action-setup@v4
 
             - name: Use Node.js 20
@@ -28,14 +29,42 @@ jobs:
             - name: Update metainfo
               run: pnpm updateMeta
 
-            - name: Commit and merge in changes
+            - name: Ensure branch exists
+              run: |
+                  git fetch origin
+                  if ! git rev-parse --verify origin/ci/meta-update; then
+                    git checkout -b ci/meta-update
+                    git push origin ci/meta-update
+                  else
+                    git checkout ci/meta-update
+                  fi
+
+            - name: Commit changes
               run: |
                   git config user.name "github-actions[bot]"
-                  git config user.email "60797172+github-actions[bot]@users.noreply.github.com"
-                  git checkout -b ci/meta-update
+                  git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
                   git add meta/io.github.moonhq.moonroof.metainfo.xml
                   git commit -m "Insert release changes for ${{ github.event.release.tag_name }}"
                   git push origin ci/meta-update --force
-                  gh pr create -B main -H ci/meta-update -t "Metainfo for ${{ github.event.release.tag_name }}" -b "This PR updates the metainfo for release ${{ github.event.release.tag_name }}. @Prince527Github"
-              env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Create Pull Request
+              uses: peter-evans/create-pull-request@v6
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+                  commit-message: "Insert release changes for ${{ github.event.release.tag_name }}"
+                  committer: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
+                  author: ${{ github.actor }} <${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com>
+                  signoff: false
+                  branch: ci/meta-update
+                  delete-branch: true
+                  title: "Metainfo for ${{ github.event.release.tag_name }}"
+                  body: |
+                      This PR updates the metainfo for release ${{ github.event.release.tag_name }}.
+                      @Prince527Github
+                  labels: |
+                      report
+                      automated pr
+                  assignees: Prince527Github
+                  reviewers: Prince527Github
+                  milestone: 1
+                  draft: false

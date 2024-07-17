@@ -196,11 +196,11 @@
       <url>https://github.com/Vencord/Vesktop/releases/tag/v0.1.0</url>
     </release>
   </releases>
-  <url type="homepage">https://github.com/verticalsync/Sunroof</url>
-  <url type="bugtracker">https://github.com/verticalsync/Sunroof/issues</url>
-  <url type="help">https://github.com/verticalsync/Sunroof/issues</url>
-  <url type="donation">https://github.com/sponsors/verticalsync</url>
-  <url type="vcs-browser">https://github.com/verticalsync/Sunroof</url>
+  <url type="homepage">https://github.com/MoonHQ/Moonroof</url>
+  <url type="bugtracker">https://github.com/MoonHQ/Moonroof/issues</url>
+  <url type="help">https://github.com/MoonHQ/Moonroof/issues</url>
+  <url type="donation">https://github.com/sponsors/MoonHQ</url>
+  <url type="vcs-browser">https://github.com/MoonHQ/Moonroof</url>
   <categories>
     <category>InstantMessaging</category>
     <category>Network</category>

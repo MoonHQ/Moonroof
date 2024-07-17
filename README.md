@@ -1,4 +1,4 @@
-# Mooncord [<img src="https://api.serversmp.xyz/upload/6696ae127036ecb33d717ada.webp" width="225" align="left" alt="Moonroof">](https://github.com/MoonHQ/Moonroof)
+# Moonroof [<img src="https://api.serversmp.xyz/upload/6696ae127036ecb33d717ada.webp" width="225" align="right" alt="Moonroof">](https://github.com/MoonHQ/Moonroof)
 
 Moonroof is a fork of [Sunroof](https://github.com/verticalsync/Sunroof) which is a fork of [Vesktop](https://github.com/Vencord/Vesktop).
 

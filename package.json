@@ -1,12 +1,12 @@
 {
     "name": "moonroof",
-    "version": "1.6.1",
+    "version": "1.6.2",
     "private": true,
     "description": "A fork of Vesktop pre-packaged with Mooncord",
     "keywords": [],
     "homepage": "https://github.com/MoonHQ/Moonroof",
     "license": "GPL-3.0",
-    "author": "verticalsync",
+    "author": "verticalsync, Prince527",
     "main": "dist/js/main.js",
     "scripts": {
         "build": "tsx scripts/build/build.mts",
@@ -62,7 +62,7 @@
         "pnpm": ">=9"
     },
     "build": {
-        "appId": "io.github.verticalsync.moonroof",
+        "appId": "io.github.moonhq.moonroof",
         "productName": "Moonroof",
         "files": [
             "!*",

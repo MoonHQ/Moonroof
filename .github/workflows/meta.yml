@@ -29,16 +29,6 @@ jobs:
             - name: Update metainfo
               run: pnpm updateMeta
 
-            - name: Ensure branch exists
-              run: |
-                  git fetch origin
-                  if ! git rev-parse --verify origin/ci/meta-update; then
-                    git checkout -b ci/meta-update
-                    git push origin ci/meta-update
-                  else
-                    git checkout ci/meta-update
-                  fi
-
             - name: Commit changes
               run: |
                   git config user.name "github-actions[bot]"

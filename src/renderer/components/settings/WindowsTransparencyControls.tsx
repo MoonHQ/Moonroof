@@ -33,7 +33,7 @@ export const WindowsTransparencyControls: SettingsComponent = ({ settings }) => 
                     },
                     { label: "Tabbed (variant of Mica with stronger background tinting)", value: "tabbed" },
                     {
-                        label: "Acrylic (blurs the window behind Sunroof for a translucent background)",
+                        label: "Acrylic (blurs the window behind Moonroof for a translucent background)",
                         value: "acrylic"
                     }
                 ]}

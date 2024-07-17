@@ -42,8 +42,8 @@ const customSettingsSections = (
 ).customSections;
 
 customSettingsSections.push(() => ({
-    section: "Sunroof",
-    label: "Sunroof Settings",
+    section: "Moonroof",
+    label: "Moonroof Settings",
     element: SettingsUi,
     className: "vc-vesktop-settings"
 }));
@@ -67,8 +67,8 @@ if (Settings.store[vencordDir]) {
         setTimeout(
             () =>
                 Alerts.show({
-                    title: "Custom Suncord Location",
-                    body: "Due to security hardening changes in Sunroof, your custom Suncord location had to be reset. Please configure it again in the settings.",
+                    title: "Custom Mooncord Location",
+                    body: "Due to security hardening changes in Moonroof, your custom Mooncord location had to be reset. Please configure it again in the settings.",
                     onConfirm: () => delete Settings.store[vencordDir]
                 }),
             5000

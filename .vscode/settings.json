@@ -21,5 +21,10 @@
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "cSpell.words": ["Vesktop", "Sunroof"]
+    "cSpell.words": [
+        "Vesktop",
+        "Sunroof",
+        "Moonroof",
+    ],
+    "editor.wordBasedSuggestions": "off"
 }

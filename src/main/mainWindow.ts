@@ -91,7 +91,7 @@ function initTray(win: BrowserWindow) {
             click: createAboutWindow
         },
         {
-            label: "Repair Suncord",
+            label: "Repair Mooncord",
             async click() {
                 await downloadVencordFiles();
                 app.relaunch();
@@ -99,7 +99,7 @@ function initTray(win: BrowserWindow) {
             }
         },
         {
-            label: "Reset Sunroof",
+            label: "Reset Moonroof",
             async click() {
                 await clearData(win);
             }
@@ -124,15 +124,15 @@ function initTray(win: BrowserWindow) {
     ]);
 
     tray = new Tray(ICON_PATH);
-    tray.setToolTip("Sunroof");
+    tray.setToolTip("Moonroof");
     tray.setContextMenu(trayMenu);
     tray.on("click", onTrayClick);
 }
 
 async function clearData(win: BrowserWindow) {
     const { response } = await dialog.showMessageBox(win, {
-        message: "Are you sure you want to reset Sunroof?",
-        detail: "This will log you out, clear caches and reset all your settings!\n\nSunroof will automatically restart after this operation.",
+        message: "Are you sure you want to reset Moonroof?",
+        detail: "This will log you out, clear caches and reset all your settings!\n\nMoonroof will automatically restart after this operation.",
         buttons: ["Yes", "No"],
         cancelId: MessageBoxChoice.Cancel,
         defaultId: MessageBoxChoice.Default,
@@ -161,24 +161,24 @@ function initMenuBar(win: BrowserWindow) {
 
     const subMenu = [
         {
-            label: "About Sunroof",
+            label: "About Moonroof",
             click: createAboutWindow
         },
         {
-            label: "Force Update Suncord",
+            label: "Force Update Mooncord",
             async click() {
                 await downloadVencordFiles();
                 app.relaunch();
                 app.quit();
             },
-            toolTip: "Sunroof will automatically restart after this operation"
+            toolTip: "Moonroof will automatically restart after this operation"
         },
         {
-            label: "Reset Sunroof",
+            label: "Reset Moonroof",
             async click() {
                 await clearData(win);
             },
-            toolTip: "Sunroof will automatically restart after this operation"
+            toolTip: "Moonroof will automatically restart after this operation"
         },
         {
             label: "Relaunch",
@@ -247,7 +247,7 @@ function initMenuBar(win: BrowserWindow) {
 
     const menu = Menu.buildFromTemplate([
         {
-            label: "Sunroof",
+            label: "Moonroof",
             role: "appMenu",
             submenu: subMenu.filter(isTruthy)
         },
@@ -424,7 +424,7 @@ function createMainWindow() {
             transparencyOption !== "none" && {
                 transparent: true
             }),
-        ...(staticTitle && { title: "Sunroof" }),
+        ...(staticTitle && { title: "Moonroof" }),
         ...(process.platform === "darwin" && getDarwinOptions()),
         ...getWindowBoundsOptions(),
         autoHideMenuBar: enableMenu

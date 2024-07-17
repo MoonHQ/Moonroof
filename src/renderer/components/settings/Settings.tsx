@@ -50,7 +50,7 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
         {
             key: "staticTitle",
             title: "Static Title",
-            description: 'Makes the window title "Sunroof" instead of changing to the current page',
+            description: 'Makes the window title "Moonroof" instead of changing to the current page',
             defaultValue: false
         },
         {
@@ -72,14 +72,14 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
         {
             key: "tray",
             title: "Tray Icon",
-            description: "Add a tray icon for Sunroof",
+            description: "Add a tray icon for Moonroof",
             defaultValue: true,
             invisible: () => isMac
         },
         {
             key: "minimizeToTray",
             title: "Minimize to tray",
-            description: "Hitting X will make Sunroof minimize to the tray instead of closing",
+            description: "Hitting X will make Moonroof minimize to the tray instead of closing",
             defaultValue: true,
             invisible: () => isMac,
             disabled: () => Settings.store.tray === false
@@ -87,7 +87,7 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
         {
             key: "clickTrayToShowHide",
             title: "Hide/Show on tray click",
-            description: "Left clicking tray icon will toggle the sunroof window visibility.",
+            description: "Left clicking tray icon will toggle the Moonroof window visibility.",
             defaultValue: false
         },
         {
@@ -115,12 +115,12 @@ const SettingsOptions: Record<string, Array<BooleanSetting | SettingsComponent>>
         {
             key: "openLinksWithElectron",
             title: "Open Links in app (experimental)",
-            description: "Opens links in a new Sunroof window instead of your web browser",
+            description: "Opens links in a new Moonroof window instead of your web browser",
             defaultValue: false
         }
     ],
     "Custom Splash Animation": [CustomSplashAnimation],
-    "Suncord Location": [VencordLocationPicker]
+    "Mooncord Location": [VencordLocationPicker]
 };
 
 function SettingsSections() {
@@ -161,7 +161,7 @@ export default function SettingsUi() {
     return (
         <Forms.FormSection>
             <Text variant="heading-lg/semibold" style={{ color: "var(--header-primary)" }} tag="h2">
-                Sunroof Settings
+                Moonroof Settings
             </Text>
 
             <SettingsSections />

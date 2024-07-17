@@ -16,7 +16,7 @@ export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
     return (
         <>
             <Forms.FormText>
-                Suncord files are loaded from{" "}
+                Mooncord files are loaded from{" "}
                 {vencordDir ? (
                     <a
                         href="about:blank"
@@ -41,7 +41,7 @@ export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
                                 break;
                             case "ok":
                                 Toasts.show({
-                                    message: "Suncord install changed. Fully restart Sunroof to apply.",
+                                    message: "Mooncord install changed. Fully restart Moonroof to apply.",
                                     id: Toasts.genId(),
                                     type: Toasts.Type.SUCCESS
                                 });
@@ -49,7 +49,7 @@ export const VencordLocationPicker: SettingsComponent = ({ settings }) => {
                             case "invalid":
                                 Toasts.show({
                                     message:
-                                        "You did not choose a valid Suncord install. Make sure you're selecting the dist dir!",
+                                        "You did not choose a valid Mooncord install. Make sure you're selecting the dist dir!",
                                     id: Toasts.genId(),
                                     type: Toasts.Type.FAILURE
                                 });

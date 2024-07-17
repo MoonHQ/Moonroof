@@ -15,7 +15,7 @@ export const PORTABLE =
     !process.execPath.toLowerCase().endsWith("electron.exe") &&
     !existsSync(join(vesktopDir, "Uninstall Vesktop.exe"));
 
-const LEGACY_DATA_DIR = join(app.getPath("appData"), "SuncordDesktop", "SuncordDesktop");
+const LEGACY_DATA_DIR = join(app.getPath("appData"), "MooncordDesktop", "MooncordDesktop");
 export const DATA_DIR =
     process.env.SUNCORD_USER_DATA_DIR || (PORTABLE ? join(vesktopDir, "Data") : join(app.getPath("userData")));
 
@@ -30,7 +30,7 @@ if (existsSync(LEGACY_DATA_DIR)) {
         }
         rmdirSync(LEGACY_DATA_DIR);
         renameSync(
-            join(app.getPath("appData"), "SuncordDesktop", "IndexedDB"),
+            join(app.getPath("appData"), "MooncordDesktop", "IndexedDB"),
             join(DATA_DIR, "sessionData", "IndexedDB")
         );
     } catch (e) {
@@ -49,9 +49,9 @@ export const VENCORD_THEMES_DIR = join(DATA_DIR, "themes");
 // as otherwise "DATA_DIR" (which is used by ./settings) will be uninitialised
 export const VENCORD_FILES_DIR =
     (require("./settings") as typeof import("./settings")).State.store.vencordDir ||
-    join(SESSION_DATA_DIR, "suncordFiles");
+    join(SESSION_DATA_DIR, "MooncordFiles");
 
-export const USER_AGENT = `Sunroof/${app.getVersion()} (https://github.com/verticalsync/Sunroof)`;
+export const USER_AGENT = `Moonroof/${app.getVersion()} (https://github.com/MoonHQ/Moonroof)`;
 
 // dimensions shamelessly stolen from Discord Desktop :3
 export const MIN_WIDTH = 940;

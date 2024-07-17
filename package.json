@@ -1,10 +1,10 @@
 {
-    "name": "sunroof",
+    "name": "moonroof",
     "version": "1.6.1",
     "private": true,
-    "description": "A fork of Vesktop pre-packaged with Suncord",
+    "description": "A fork of Vesktop pre-packaged with Mooncord",
     "keywords": [],
-    "homepage": "https://github.com/verticalsync/sunroof",
+    "homepage": "https://github.com/MoonHQ/Moonroof",
     "license": "GPL-3.0",
     "author": "verticalsync",
     "main": "dist/js/main.js",
@@ -62,8 +62,8 @@
         "pnpm": ">=9"
     },
     "build": {
-        "appId": "io.github.verticalsync.sunroof",
-        "productName": "Sunroof",
+        "appId": "io.github.verticalsync.moonroof",
+        "productName": "Moonroof",
         "files": [
             "!*",
             "!node_modules",
@@ -108,11 +108,11 @@
                 }
             ],
             "desktop": {
-                "Name": "Sunroof",
+                "Name": "Moonroof",
                 "GenericName": "Internet Messenger",
                 "Type": "Application",
                 "Categories": "Network;InstantMessaging;Chat;",
-                "Keywords": "discord;sunroof;vesktop;vencord;suncord;electron;chat;"
+                "Keywords": "discord;moonroof;vesktop;vencord;mooncord;electron;chat;"
             }
         },
         "mac": {

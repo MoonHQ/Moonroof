@@ -44,7 +44,7 @@ export async function githubGet(endpoint: string) {
 }
 
 export async function downloadVencordFiles() {
-    const release = await githubGet("/repos/verticalsync/Suncord/releases/latest");
+    const release = await githubGet("/repos/verticalsync/Mooncord/releases/latest");
 
     const { assets }: ReleaseData = await release.json();
 

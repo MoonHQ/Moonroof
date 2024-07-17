@@ -53,7 +53,7 @@ export function createFirstLaunchTour() {
         if (data.autoStart) autoStart.enable();
 
         if (data.importSettings) {
-            const from = join(app.getPath("userData"), "..", "Suncord", "settings");
+            const from = join(app.getPath("userData"), "..", "Mooncord", "settings");
             const to = join(DATA_DIR, "settings");
             try {
                 const files = readdirSync(from);

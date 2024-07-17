@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <component type="desktop-application">
   <!--Created with jdAppStreamEdit 7.1-->
-  <id>io.github.verticalsync.sunroof</id>
-  <name>Sunroof</name>
-  <summary>Snappier Discord app with Suncord</summary>
-  <developer_name>Suncord Contributors</developer_name>
-  <launchable type="desktop-id">io.github.verticalsync.sunroof.desktop</launchable>
+  <id>io.github.moonhq.moonroof</id>
+  <name>Moonroof</name>
+  <summary>Snappier Discord app with Mooncord</summary>
+  <developer_name>Mooncord Contributors</developer_name>
+  <launchable type="desktop-id">io.github.moonhq.moonroof.desktop</launchable>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0</project_license>
-  <project_group>Suncord</project_group>
+  <project_group>Mooncord</project_group>
   <description>
-    <p>Sunroof is a cross-platform Vesktop Fork desktop app aiming to give you extra plugins but still give you a snappier Discord experience, with Suncord pre-installed.</p>
+    <p>Moonroof is a cross-platform Vesktop Fork desktop app aiming to give you extra plugins but still give you a snappier Discord experience, with Mooncord pre-installed.</p>
     <p>Which comes bundled with Venmic, a purpose-built library to provide functioning audio screenshare.</p>
   </description>
   <screenshots>
     <screenshot type="default">
-      <caption>Suncord settings page and about window open</caption>
+      <caption>Mooncord settings page and about window open</caption>
       <image type="source">https://files.catbox.moe/59wp6h.png</image>
     </screenshot>
     <screenshot>
@@ -226,6 +226,8 @@
     <keyword>Discord</keyword>
     <keyword>Sunroof</keyword>
     <keyword>Suncord</keyword>
+    <keyword>Mooncord</keyword>
+    <keyword>Moonroof</keyword>
     <keyword>Vencord</keyword>
     <keyword>Vesktop</keyword>
     <keyword>Privacy</keyword>

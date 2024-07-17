@@ -76,7 +76,7 @@ function init() {
     });
 
     app.whenReady().then(async () => {
-        if (process.platform === "win32") app.setAppUserModelId("io.github.verticalsync.sunroof");
+        if (process.platform === "win32") app.setAppUserModelId("io.github.moonhq.moonroof");
 
         registerScreenShareHandler();
         registerMediaPermissionsHandler();
@@ -96,10 +96,10 @@ function init() {
 
 if (!app.requestSingleInstanceLock({ IS_DEV })) {
     if (IS_DEV) {
-        console.log("Sunroof is already running. Quitting previous instance...");
+        console.log("Moonroof is already running. Quitting previous instance...");
         init();
     } else {
-        console.log("Sunroof is already running. Quitting...");
+        console.log("Moonroof is already running. Quitting...");
         app.quit();
     }
 } else {

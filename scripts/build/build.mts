@@ -65,7 +65,7 @@ await Promise.all([
     }),
     createContext({
         ...CommonOpts,
-        globalName: "Sunroof",
+        globalName: "Moonroof",
         entryPoints: ["src/renderer/index.ts"],
         outfile: "dist/js/renderer.js",
         format: "iife",

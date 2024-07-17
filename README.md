@@ -1,12 +1,8 @@
-# Sunroof [<img src="./static/icon.png" width="225" align="right" alt="Sunroof">](https://github.com/verticalsync/Sunroof)
+# Mooncord [<img src="https://api.serversmp.xyz/upload/6696ae127036ecb33d717ada.webp" width="225" align="left" alt="Moonroof">](https://github.com/MoonHQ/Moonroof)
 
-[![Suncord](https://img.shields.io/badge/Suncord-yellow?style=flat)](https://github.com/verticalsync/Suncord)
-[![Tests](https://github.com/verticalsync/Sunroof/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/verticalsync/Sunroof/actions/workflows/test.yml)
-[![Discord](https://img.shields.io/discord/1207691698386501634.svg?color=768AD4&label=Discord&logo=discord&logoColor=white)](https://discord.gg/VasF3Ma4Ab)
+Moonroof is a fork of [Sunroof](https://github.com/verticalsync/Sunroof) which is a fork of [Vesktop](https://github.com/Vencord/Vesktop).
 
-Sunroof is a fork of [Vesktop](https://github.com/Vencord/Vesktop).
-
-You can join our [discord server](https://discord.gg/VasF3Ma4Ab) for commits, changes, chat or even support.<br></br>
+You can join our [discord server](https://discord.com/invite/zXnVNWjwvy).<br><br></br></br></br></br>
 
 ## Main features
 
@@ -15,7 +11,7 @@ You can join our [discord server](https://discord.gg/VasF3Ma4Ab) for commits, ch
 
 **Extra included changes**
 
--   Suncord preinstalled
+-   Mooncord preinstalled
 -   Custom Splash animations from [this PR](https://github.com/Vencord/Vesktop/pull/355)
 
 **Not yet supported**:
@@ -24,44 +20,7 @@ You can join our [discord server](https://discord.gg/VasF3Ma4Ab) for commits, ch
 
 ## Installing
 
-### Windows
-
-If you don't know the difference, pick the Installer.
-
--   [Installer](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-Setup-1.6.1.exe)
--   Portable
-    -   [x64 / amd64](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.1-win.zip)
-    -   [arm64](https://github.com/verticalsync/Sunroof/releases/download/v1.6.1/Sunroof-1.6.1-arm64-win.zip)
-
-### Mac
-
-If you don't know the difference, pick the Intel build.
-
--   [Sunroof.dmg](https://github.com/verticalsync/Sunroof/releases/download/v1.6.1/Sunroof-1.6.1-universal.dmg)
-
-### Linux
-
-[![Download on Flathub](https://flathub.org/api/badge?svg)](https://flathub.org/apps/io.github.verticalsync.sunroof)
-
-If you don't know the difference, pick amd64.
-
--   amd64 / x86_64
-    -   [AppImage](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.1.AppImage)
-    -   [Ubuntu/Debian (.deb)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof_1.6.1_amd64.deb)
-    -   [Fedora/RHEL (.rpm)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.1.x86_64.rpm)
-    -   [tarball](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.1.tar.gz)
--   arm64 / aarch64
-    -   [AppImage](https://github.com/verticalsync/Sunroof/releases/latest/download/Sunroof-1.6.1-arm64.AppImage)
-    -   [Ubuntu/Debian (.deb)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof_1.6.1_arm64.deb)
-    -   [Fedora/RHEL (.rpm)](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.1.aarch64.rpm)
-    -   [tarball](https://github.com/verticalsync/Sunroof/releases/latest/download/sunroof-1.6.1-arm64.tar.gz)
-
-## Sponsors
-
-|                       **Thanks a lot to all Suncord [sponsors](https://github.com/sponsors/verticalsync)!!**                        |
-| :---------------------------------------------------------------------------------------------------------------------------------: |
-| [![](https://raw.githubusercontent.com/verticalsync/github-sponsor-graph/main/graph.png)](https://github.com/sponsors/verticalsync) |
-|                _generated using forked [github-sponsor-graph](https://github.com/verticalsync/github-sponsor-graph)_                |
+Download the latest release from the [releases page](https://github.com/MoonHQ/Moonroof/releases).
 
 ## Building from Source
 
@@ -71,8 +30,8 @@ Packaging will create builds in the dist/ folder
 > On Windows, if you run the test script, you will get test errors about venmic, you can ignore these as it's a linux only module.
 
 ```sh
-git clone https://github.com/verticalsync/Sunroof
-cd Sunroof
+git clone https://github.com/MoonHQ/Moonroof
+cd Moonroof
 
 # Install Dependencies
 pnpm i
